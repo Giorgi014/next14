@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useEffect, useState } from "react";
 
 type User = {
@@ -34,6 +34,9 @@ export default function UsersClient() {
     }
     fetchUsers();
   }, []);
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>{error}</div>;
 
   return (
     <ul className="space-y-4 p-4">
