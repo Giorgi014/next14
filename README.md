@@ -1,13 +1,13 @@
 # Next.js 14 App Directory Crash Course – Codevolution
 
-This project is built by following the [Next.js 14 App Directory Crash Course](https://www.youtube.com/watch?v=ZjAqacIC_3c&list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI) by [Codevolution](https://www.youtube.com/@Codevolution).  
-It demonstrates advanced features of Next.js 14, including the App Router, layouts, routing patterns, API routes, error boundaries, intercepting routes, and more.
+This project is a hands-on implementation of advanced Next.js 14 features, following the [Next.js 14 App Directory Crash Course](https://www.youtube.com/watch?v=ZjAqacIC_3c&list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI) by [Codevolution](https://www.youtube.com/@Codevolution).  
+It showcases the App Router, layouts, dynamic and nested routing, API routes, error boundaries, parallel and intercepting routes, and more.
 
 ---
 
 ## 📚 Tutorial Series
 
-- **YouTube Playlist:** [Next.js 14 App Directory Crash Course](https://www.youtube.com/watch?v=ZjAqacIC_3c&list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI)
+- **YouTube Playlist:** [Next.js 15 App Directory Crash Course](https://www.youtube.com/watch?v=ZjAqacIC_3c&list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI)
 - **Channel:** [Codevolution](https://www.youtube.com/@Codevolution)
 
 ---
@@ -25,7 +25,7 @@ It demonstrates advanced features of Next.js 14, including the App Router, layou
    bun install
    ```
 
-2. **Run the development server:**
+2. **Start the development server:**
    ```bash
    npm run dev
    # or
@@ -36,7 +36,7 @@ It demonstrates advanced features of Next.js 14, including the App Router, layou
    bun dev
    ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+3. Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
@@ -45,35 +45,30 @@ It demonstrates advanced features of Next.js 14, including the App Router, layou
 ```
 src/
   app/
-    (auth)/                # Auth layouts, login, register, forgot-password
+    (auth)/                # Authentication pages (login, register, forgot-password)
     about/                 # About page
-    blog/                  # Blog with nested routes and loading UI
-    comments/              # API routes for comments
-    complex-dashboard/     # Parallel routes, intercepting routes, layouts
-    dashboard/             # API route for dashboard
-    docs/                  # Catch-all routes
-    f1/, f2/, f3/, f4/     # Route groups, intercepting, parallel routes
-    hello/                 # API route
-    order-product/         # Dynamic route
-    photo-feed/            # Modal routes, static assets
-    products/              # Error boundaries, dynamic nested routes
-    profile/               # API route for profile
-    time/                  # API route
-  components/              # Reusable UI components
+    blog/                  # Blog section with nested routes
+    components/            # Shared UI components
+    products/              # Dynamic product pages with layouts
+    users/                 # API routes for users
+    users-client/          # Client-side user rendering
+    users-server/          # Server-side user rendering with loading/error states
+    ...
   middleware.ts            # Middleware for authentication, logging, etc.
+  globals.css              # Global styles
 ```
 
 ---
 
 ## ✨ Features Demonstrated
 
-- **App Directory Routing**: File-based routing with nested layouts and templates
-- **Dynamic & Catch-all Routes**: Flexible route patterns for complex apps
+- **App Directory Routing**: File-based routing with nested layouts and route groups
+- **Dynamic & Nested Routes**: Flexible route patterns for scalable apps
 - **API Routes**: REST endpoints using the app directory
 - **Error Boundaries & Loading UI**: Custom error and loading states per route
 - **Route Interception & Parallel Routes**: Advanced navigation patterns
 - **Layouts & Templates**: Shared UI and persistent layouts
-- **Client & Server Components**: Mixing SSR and client-side interactivity
+- **Client & Server Components**: SSR and client-side interactivity
 - **Middleware**: Authentication, logging, and more
 - **Modular CSS & Tailwind CSS**: Scoped and utility-first styling
 
@@ -81,11 +76,11 @@ src/
 
 ## 📦 Dependencies
 
-- [Next.js 14](https://nextjs.org/)
-- [React](https://react.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/) (if included in the tutorial)
-- Other dependencies as per tutorial steps
+- Next.js 14
+- React
+- TypeScript
+- Tailwind CSS (if included)
+- Other dependencies as per the tutorial
 
 ---
 
